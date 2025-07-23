@@ -23,7 +23,7 @@ plot <- function(result, parameter, ylab){
   
   
   p1 <- ggplot() + 
-    geom_col(data = mean, aes(x = Condition, y = mean, fill = Condition), width = 0.4) +
+    geom_col(data = mean, aes(x = Condition, y = mean, fill = Condition), width = 0.5) +
     geom_errorbar(data = mean, aes(x = Condition, ymin = mean - sd/(5^0.5), ymax = mean + sd/(5^0.5), color = Condition), width = 0) +
     geom_point(data = tmp, aes(x = Condition, y = value), size = 0.3, color = 'grey30') + 
     theme + 
