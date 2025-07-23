@@ -25,7 +25,7 @@ plot <- function(result, parameter, ylab){
   p1 <- ggplot() + 
     geom_col(data = mean, aes(x = Condition, y = mean, fill = Condition), width = 0.3) +
     geom_errorbar(data = mean, aes(x = Condition, ymin = mean - sd/(5^0.5), ymax = mean + sd/(5^0.5), color = Condition), width = 0) +
-    geom_jitter(data = tmp, aes(x = Condition, y = value), size = 0.5，width = 0.05) + 
+    geom_point(data = tmp, aes(x = Condition, y = value), size = 0.5) + 
     theme + 
     scale_fill_manual(values = c("grey70", "red")) +
     scale_color_manual(values = c("grey70", "red")) +
