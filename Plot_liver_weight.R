@@ -6,7 +6,10 @@ cat("Usage: plot(data, parameter, ylab)\n",
     "  ylab: title of y axis\n",
     "  'Condition' column should be set as a factor with the desired group order,\n",
     "    e.g., Condition <- factor(Condition, levels = c('GFP', 'Cre'))\n"
-    " library(cowplot)\n aligned <- align_plots(p1, p2, p3, align = "hv", axis = "tblr")\n final_plot <- plot_grid(plotlist = aligned, nrow = 1)\n ggsave("tg.pdf", final_plot, width = 3.5, height = 1.6)"
+    " library(cowplot)\n"
+    " aligned <- align_plots(p1, p2, p3, align = "hv", axis = "tblr")\n"
+    " final_plot <- plot_grid(plotlist = aligned, nrow = 1)\n"
+    " ggsave("tg.pdf", final_plot, width = 3.5, height = 1.6)"
 )
 plot <- function(result, parameter, ylab){
   
