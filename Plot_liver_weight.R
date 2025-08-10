@@ -9,7 +9,7 @@ cat("Usage: plot(data, parameter, ylab)\n",
 )
 plot <- function(result, parameter, ylab){
   
-  tmp <- dplyr::select(result, Condition, all_of(parameter))
+  tmp <- dplyr::select(result, Condition, parameter)
   names(tmp) <- c('Condition', 'value')
   
   p_val <- wilcox.test(tmp$value[tmp$Condition == levels(tmp$Condition)[1]],
