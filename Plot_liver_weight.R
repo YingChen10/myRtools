@@ -1,3 +1,12 @@
+
+cat("Usage: plot(data, parameter, ylab)\n",
+    "Notes:\n",
+    "  data: data frame containing condition and value information\n",
+    "  parameter: column name of the value of interest\n",
+    "  ylab: title of y axis\n",
+    "  'Condition' column should be set as a factor with the desired group order,\n",
+    "    e.g., Condition <- factor(Condition, levels = c('GFP', 'Cre'))\n"
+)
 plot <- function(result, parameter, ylab){
   
   tmp <- dplyr::select(result, Condition, all_of(parameter))
