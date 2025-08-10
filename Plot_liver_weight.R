@@ -9,8 +9,9 @@ cat("Usage: plot(data, parameter, ylab)\n",
     " library(cowplot)\n",
     " aligned <- align_plots(p1, p2, p3, align = "hv", axis = "tblr")\n",
     " final_plot <- plot_grid(plotlist = aligned, nrow = 1)\n",
-    " ggsave("tg.pdf", final_plot, width = 3.5, height = 1.6)"
-)
+    " ggsave("tg.pdf", final_plot, width = 3.5, height = 1.6)")
+
+
 plot <- function(result, parameter, ylab){
   
   tmp <- dplyr::select(result, Condition, parameter)
