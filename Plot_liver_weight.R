@@ -1,4 +1,4 @@
-
+library(cowplot)
 cat("Usage: plot(data, parameter, ylab)\n",
     "Notes:\n",
     "  data: data frame containing condition and value information\n",
