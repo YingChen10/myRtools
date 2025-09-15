@@ -13,7 +13,7 @@ cat("Usage: plot(data, parameter, ylab)\n",
 )
 
 
-source("https://raw.githubusercontent.com/YingChen10/myRtools/main/Plot_liver_weight.R")
+#source("https://raw.githubusercontent.com/YingChen10/myRtools/main/Plot_liver_weight.R")
 plot <- function(result, parameter, ylab){
   
   tmp <- dplyr::select(result, Condition, parameter)
